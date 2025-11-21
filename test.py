@@ -19,7 +19,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-endpoint = "https://bank-live-a43757.southafricanorth.inference.ml.azure.com/score"
+
+endpoint = os.getenv("endpoint")
 api_key = os.getenv("REQUEST_KEY")
 
 
